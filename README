@@ -1,0 +1,16 @@
+bp@legion:~/dev/spatiebas/serial-monitor/unit-tests/build(master)$ cmake --build . -- -j12 -Oline --no-print-directory
+/usr/bin/cmake -P /home/bp/dev/spatiebas/serial-monitor/unit-tests/build/CMakeFiles/VerifyGlobs.cmake
+/usr/bin/cmake -S/home/bp/dev/spatiebas/serial-monitor/unit-tests/source -B/home/bp/dev/spatiebas/serial-monitor/unit-tests/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/bp/dev/spatiebas/serial-monitor/unit-tests/build/CMakeFiles /home/bp/dev/spatiebas/serial-monitor/unit-tests/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+/usr/bin/gmake  -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/depend
+cd /home/bp/dev/spatiebas/serial-monitor/unit-tests/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/bp/dev/spatiebas/serial-monitor/unit-tests/source /home/bp/dev/spatiebas/serial-monitor/unit-tests/source /home/bp/dev/spatiebas/serial-monitor/unit-tests/build /home/bp/dev/spatiebas/serial-monitor/unit-tests/build /home/bp/dev/spatiebas/serial-monitor/unit-tests/build/CMakeFiles/unit-tests.dir/DependInfo.cmake --color=
+/usr/bin/gmake  -f CMakeFiles/unit-tests.dir/build.make CMakeFiles/unit-tests.dir/build
+[ 50%] Building CXX object CMakeFiles/unit-tests.dir/serial-monitor-tests.cpp.o
+gmake[2]: *** Deleting file 'CMakeFiles/unit-tests.dir/serial-monitor-tests.cpp.o'
+/usr/bin/c++  -I/home/bp/dev/spatiebas/serial-monitor/unit-tests/source O0 -g3 -Wall -std=gnu++20 -MD -MT CMakeFiles/unit-tests.dir/serial-monitor-tests.cpp.o -MF CMakeFiles/unit-tests.dir/serial-monitor-tests.cpp.o.d -o CMakeFiles/unit-tests.dir/serial-monitor-tests.cpp.o -c /home/bp/dev/spatiebas/serial-monitor/unit-tests/source/serial-monitor-tests.cpp
+c++: warning: O0: linker input file unused because linking not done
+c++: error: O0: linker input file not found: No such file or directory
+gmake[2]: *** [CMakeFiles/unit-tests.dir/build.make:79: CMakeFiles/unit-tests.dir/serial-monitor-tests.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:86: CMakeFiles/unit-tests.dir/all] Error 2
+gmake: *** [Makefile:94: all] Error 2
