@@ -14,3 +14,12 @@ c++: error: O0: linker input file not found: No such file or directory
 gmake[2]: *** [CMakeFiles/unit-tests.dir/build.make:79: CMakeFiles/unit-tests.dir/serial-monitor-tests.cpp.o] Error 1
 gmake[1]: *** [CMakeFiles/Makefile2:86: CMakeFiles/unit-tests.dir/all] Error 2
 gmake: *** [Makefile:94: all] Error 2
+
+To reproduce
+
+clone the repository
+cd gmake-not-linking/unit-tests
+mkdir -p build
+cd build
+cmake -G 'Unix Makefiles' ../source
+cmake --build . -- -j12 -Oline --no-print-directory
